@@ -14,7 +14,6 @@ poke_info = {}
 pokemons = request["results"]
 for pokemon in pokemons:
     # 5. Get the name of the pokemon
-    #print(pokemon)
     name = pokemon['name']
     # 6. Get the link to the additional info
     url = pokemon['url']
@@ -41,7 +40,5 @@ for pokemon in pokemons:
     poke_info[name] = abilities_
 # 11. Loop through your list and print the name of the
 #     pokemon and their ability
-##keys = poke_info.keys()
 for i in poke_info:
-    ##print(keys[i], poke_info[i])
     print(i, poke_info[i])
